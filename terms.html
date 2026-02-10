@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Terms & Conditions | Rebrar.in</title>
+  <meta name="description" content="Read the Terms & Conditions of Rebrar.in. By using this website, you agree to our terms of use and policies." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rebrar.in/terms.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root{
+      --bg:#f2f3f5; --card:#ffffff; --sky:#3ba3ff; --text:#000000;
+      --muted:#5b6472; --border:#e5e7eb; --radius:14px; --shadow:0 10px 20px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);line-height:1.7}
+    .container{max-width:1140px;margin:auto;padding:22px}
+    h1,h2{color:var(--sky);margin:0 0 10px}
+    p,li{margin:8px 0}
+
+    /* Navbar */
+    .site-header{position:sticky;top:0;z-index:1000;background:#eef1f5;border-bottom:1px solid var(--border);backdrop-filter:blur(6px)}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{text-decoration:none;color:#000;font-weight:900}
+    .brand span{color:var(--sky)}
+    .nav-links{display:flex;gap:16px}
+    .nav-links a{text-decoration:none;color:#000;font-weight:600;padding:8px 10px;border-radius:8px}
+    .nav-links a:hover{background:#e7ecf3}
+    .cta-link{background:#000;color:#fff}
+    .menu-btn{display:none;border:none;background:transparent;font-size:1.6rem}
+    @media (max-width:900px){
+      .menu-btn{display:block}
+      .nav-links{
+        position:absolute;right:16px;top:64px;background:#fff;border:1px solid var(--border);
+        border-radius:12px;padding:10px;display:none;flex-direction:column;min-width:180px
+      }
+      .nav-links.show{display:flex}
+    }
+
+    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);margin-top:16px}
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Re<span>brar</span>.in</a>
+    <button id="menuBtn" class="menu-btn" aria-label="Toggle Menu">☰</button>
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="apps.html">Best Apps</a>
+      <a href="guides.html">Guides</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h1>Terms & Conditions</h1>
+    <p>Welcome to Rebrar.in. By accessing and using this website, you agree to comply with the following terms and conditions.</p>
+
+    <h2>Use of Content</h2>
+    <p>All content provided on Rebrar.in is for informational and educational purposes only. You may not reproduce or redistribute content without permission.</p>
+
+    <h2>User Responsibilities</h2>
+    <ul>
+      <li>You agree to use this website lawfully.</li>
+      <li>You are responsible for your own investment decisions.</li>
+      <li>You must not misuse or attempt to harm the website.</li>
+    </ul>
+
+    <h2>No Financial Advice</h2>
+    <p>Rebrar.in does not provide financial, investment, or trading advice. Any actions you take based on our content are at your own risk.</p>
+
+    <h2>Third-Party Links</h2>
+    <p>Our website may contain links to third-party websites. We are not responsible for their content or practices.</p>
+
+    <h2>Affiliate Disclosure</h2>
+    <p>Some links on this website are affiliate links. We may earn a commission at no extra cost to you.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>Rebrar.in will not be liable for any losses or damages arising from the use of this website.</p>
+
+    <h2>Changes to Terms</h2>
+    <p>We reserve the right to update these Terms & Conditions at any time. Continued use of the site means you accept the updated terms.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about these terms, contact us at
+      <a href="mailto:contact.abrarrtllks@gmail.com">contact.abrarrtllks@gmail.com</a>.
+    </p>
+
+    <p><em>Last updated: 2026</em></p>
+  </section>
+
+</main>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      navLinks.classList.toggle("show");
+    });
+    document.addEventListener("click", (e) => {
+      if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+        navLinks.classList.remove("show");
+      }
+    });
+    navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navLinks.classList.remove("show")));
+  }
+</script>
+
+</body>
+</html>

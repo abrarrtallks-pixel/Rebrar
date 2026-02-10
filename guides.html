@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Step-by-Step Trading & Crypto Guides in India | Rebrar.in</title>
+  <meta name="description" content="Beginner-friendly step-by-step guides to start investing in India. Learn how to open accounts on Groww, Angel One, CoinDCX, and Delta Exchange." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rebrar.in/guides.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Use same style variables as homepage -->
+  <style>
+    :root{
+      --bg:#f2f3f5; --card:#ffffff; --sky:#3ba3ff; --text:#000; --muted:#5b6472;
+      --border:#e5e7eb; --btn:#3ba3ff; --btn-dark:#000; --radius:14px;
+      --shadow:0 10px 20px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);line-height:1.7}
+    .container{max-width:1140px;margin:auto;padding:22px}
+    h1,h2,h3{color:var(--sky);margin:0 0 10px}
+    p{margin:8px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;background:var(--btn);color:#fff}
+    .btn.dark{background:#000}
+    .btn.ghost{background:#f7f9fc;color:#000;border:1px solid var(--border)}
+    .disclaimer{font-size:.85rem;color:#444}
+
+    /* Guide cards */
+    .guide-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:16px}
+    .guide-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow);transition:.2s ease;position:relative;overflow:hidden}
+    .guide-card::before{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:linear-gradient(90deg,var(--sky),#7cc4ff)}
+    .guide-card:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(0,0,0,.1)}
+    .guide-meta{font-size:.85rem;color:var(--muted);margin-bottom:6px}
+    .guide-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+
+    /* Step sections */
+    .steps ol{padding-left:18px}
+    .steps li{margin:6px 0}
+
+    @media (max-width: 900px){
+      .guide-grid{grid-template-columns:1fr}
+      .container{padding:16px}
+    }
+    .site-footer{
+  margin-top:40px;
+  background:#eef1f5;
+  border-top:1px solid var(--border);
+  padding:28px 0 10px;
+}
+
+.site-footer h3, .site-footer h4{
+  color: var(--sky);
+  margin-bottom:10px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.footer-links{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.footer-links li{
+  margin:8px 0;
+}
+
+.footer-links a{
+  color:#000;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.footer-links a:hover{
+  text-decoration:underline;
+}
+
+.footer-bottom{
+  margin-top:18px;
+  padding-top:12px;
+  border-top:1px solid var(--border);
+  display:flex;
+  justify-content:center;
+  color:#444;
+  font-size:.9rem;
+}
+
+@media (max-width: 900px){
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width: 480px){
+  .footer-grid{ grid-template-columns:1fr; }
+}
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #eef1f5;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.brand{
+  font-weight: 900;
+  letter-spacing: .3px;
+  font-size: 1.2rem;
+}
+.brand span{ color: var(--sky); }
+
+.nav-links{
+  display:flex;
+  gap:16px;
+  align-items:center;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#000;
+  font-weight:600;
+  padding:8px 10px;
+  border-radius:8px;
+}
+
+.nav-links a:hover{
+  background:#e7ecf3;
+}
+
+.nav-links .cta-link{
+  background:#000;
+  color:#fff;
+}
+
+.menu-btn{
+  display:none;
+  border:none;
+  background:transparent;
+  font-size:1.6rem;
+  cursor:pointer;
+}
+
+@media (max-width: 900px){
+  .menu-btn{ display:block; }
+  .nav-links{
+    position: absolute;
+    top: 64px;
+    right: 16px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+  }
+  .nav-links.show{ display:flex; }
+}
+  </style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <div class="brand">Re<span>brar</span>.in</div>
+
+    <button id="menuBtn" class="menu-btn" aria-label="Open Menu">
+      ☰
+    </button>
+
+    <nav id="navLinks" class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="apps.html">Best Apps</a>
+      <a href="guides.html">Guides</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="cta-link">Contact</a>
+    </nav>
+  </div>
+</header>
+  <!-- Header (reuse your navbar from index.html) -->
+  <header class="container">
+    <h1>Step-by-Step Guides to Start Trading & Crypto in India</h1>
+    <p>Choose your platform and follow simple steps to get started safely.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Guide Cards -->
+    <section class="card">
+      <h2>Choose Your Platform</h2>
+      <div class="guide-grid">
+
+        <!-- Groww -->
+        <div class="guide-card">
+          <h3>Groww – Stocks & Mutual Funds (Beginners)</h3>
+          <div class="guide-meta">Easy demat • Long-term investing</div>
+          <p>Open a demat account and start investing in stocks, ETFs, and SIPs.</p>
+          <div class="guide-actions">
+            <a class="btn ghost" href="#groww">View Guide</a>
+            <a class="btn" href="https://app.groww.in/v3cO/ic07i443" target="_blank" rel="nofollow sponsored">Open on Groww</a>
+          </div>
+        </div>
+
+        <!-- Angel One -->
+        <div class="guide-card">
+          <h3>Angel One – Intraday, Options & Futures</h3>
+          <div class="guide-meta">Active trading • Pro tools</div>
+          <p>Trade intraday, options, and futures with advanced charts.</p>
+          <div class="guide-actions">
+            <a class="btn ghost" href="#angelone">View Guide</a>
+            <a class="btn dark" href="https://angel-one.onelink.me/Wjgr/ub7pzzvk" target="_blank" rel="nofollow sponsored">Open on Angel One</a>
+          </div>
+        </div>
+
+        <!-- CoinDCX -->
+        <div class="guide-card">
+          <h3>CoinDCX – Buy & Hold Crypto (Spot)</h3>
+          <div class="guide-meta">INR deposits • Beginner friendly</div>
+          <p>Buy popular cryptocurrencies and learn crypto basics.</p>
+          <div class="guide-actions">
+            <a class="btn ghost" href="#coindcx">View Guide</a>
+            <a class="btn" href="https://invite.coindcx.com/58988096" target="_blank" rel="nofollow sponsored">Create CoinDCX Account</a>
+          </div>
+        </div>
+
+        <!-- Delta -->
+        <div class="guide-card">
+          <h3>Delta Exchange – Crypto Futures (Advanced)</h3>
+          <div class="guide-meta">Derivatives • High risk</div>
+          <p>Trade crypto futures with leverage (experienced users only).</p>
+          <div class="guide-actions">
+            <a class="btn ghost" href="#delta">View Guide</a>
+            <a class="btn dark" href="https://www.delta.exchange/?code=NBMHXI" target="_blank" rel="nofollow sponsored">Trade on Delta</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Groww Steps -->
+    <section id="groww" class="card steps">
+      <h2>How to Open a Demat Account on Groww (Step-by-Step)</h2>
+      <ol>
+        <li>Download the Groww app from Play Store/App Store.</li>
+        <li>Sign up using your mobile number or email.</li>
+        <li>Complete KYC with PAN, Aadhaar, and bank details.</li>
+        <li>Upload required documents and verify OTP.</li>
+        <li>Account activation usually completes within minutes to 24 hours.</li>
+        <li>Start investing in stocks, ETFs, and mutual funds (SIP).</li>
+      </ol>
+      <p><strong>Best for:</strong> Beginners & long-term investors.</p>
+      <a class="btn" href="https://app.groww.in/v3cO/ic07i443" target="_blank" rel="nofollow sponsored">Open Free Demat on Groww</a>
+    </section>
+
+    <!-- Angel One Steps -->
+    <section id="angelone" class="card steps">
+      <h2>How to Start Trading with Angel One</h2>
+      <ol>
+        <li>Install the Angel One app or visit the official website.</li>
+        <li>Create an account with your mobile number/email.</li>
+        <li>Complete KYC (PAN, Aadhaar, bank details).</li>
+        <li>Select trading segments: equity, intraday, options & futures.</li>
+        <li>Wait for account activation and fund your account.</li>
+        <li>Use charts and research tools to place trades.</li>
+      </ol>
+      <p><strong>Best for:</strong> Active traders.</p>
+      <a class="btn dark" href="https://angel-one.onelink.me/Wjgr/ub7pzzvk" target="_blank" rel="nofollow sponsored">Open Trading Account on Angel One</a>
+    </section>
+
+    <!-- CoinDCX Steps -->
+    <section id="coindcx" class="card steps">
+      <h2>How to Buy Crypto on CoinDCX (Spot Trading)</h2>
+      <ol>
+        <li>Download the CoinDCX app or visit the website.</li>
+        <li>Register with email/mobile number.</li>
+        <li>Complete KYC verification.</li>
+        <li>Add INR funds using UPI or bank transfer.</li>
+        <li>Buy popular crypto assets (BTC, ETH, etc.).</li>
+        <li>Enable 2FA to secure your account.</li>
+      </ol>
+      <p><strong>Best for:</strong> Crypto beginners.</p>
+      <a class="btn" href="https://invite.coindcx.com/58988096" target="_blank" rel="nofollow sponsored">Create CoinDCX Account</a>
+    </section>
+
+    <!-- Delta Steps -->
+    <section id="delta" class="card steps">
+      <h2>How to Trade Crypto Futures on Delta Exchange</h2>
+      <ol>
+        <li>Sign up on Delta Exchange website/app.</li>
+        <li>Complete identity verification.</li>
+        <li>Deposit USDT/crypto.</li>
+        <li>Select futures contracts and set leverage carefully.</li>
+        <li>Use stop-loss and risk management.</li>
+        <li>Monitor PnL and manage positions.</li>
+      </ol>
+      <p><strong>Best for:</strong> Experienced traders only.</p>
+      <a class="btn dark" href="https://www.delta.exchange/?code=NBMHXI" target="_blank" rel="nofollow sponsored">Trade Futures on Delta</a>
+      <p class="disclaimer">⚠️ Futures trading involves high risk. Trade responsibly.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer: reuse your footer from index.html -->
+  <footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+
+    <!-- Brand -->
+    <div>
+      <h3>Re<span>brar</span>.in</h3>
+      <p>
+        Rebrar.in is a beginner-friendly guide to start investing in stocks and crypto in India.
+        We compare trusted trading apps and provide simple tutorials.
+      </p>
+      <p class="disclaimer">
+        ⚠️ Educational purpose only. No financial advice. Trading & crypto involve risk.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="apps.html">Best Apps</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div>
+      <h4>Legal</h4>
+      <ul class="footer-links">
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li>Email: <a href="mailto:contact@rebrar.in">contact.abrarrtallks@gmail.com</a></li>
+        <li>Telegram: <a href="https://t.me/abrarrtallks" target="_blank" rel="noopener">@abrarrtallks</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Rebrar.in • All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = navLinks.classList.toggle("show");
+      menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+        navLinks.classList.remove("show");
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+</script>
+</body>
+</html>

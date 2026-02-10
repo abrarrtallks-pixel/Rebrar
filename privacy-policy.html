@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy | Rebrar.in</title>
+  <meta name="description" content="Read Rebrar.in Privacy Policy. Learn how we handle user data, cookies, third-party links, and privacy protection." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rebrar.in/privacy-policy.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root{--bg:#f2f3f5;--card:#fff;--sky:#3ba3ff;--text:#000;--muted:#5b6472;--border:#e5e7eb;--radius:14px;--shadow:0 10px 20px rgba(0,0,0,.06)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);line-height:1.7}
+    .container{max-width:1140px;margin:auto;padding:22px}
+    h1,h2{color:var(--sky);margin:0 0 10px}
+    p,li{margin:8px 0}
+
+    /* Navbar (reuse same styles) */
+    .site-header{position:sticky;top:0;z-index:1000;background:#eef1f5;border-bottom:1px solid var(--border);backdrop-filter:blur(6px)}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{text-decoration:none;color:#000;font-weight:900}
+    .brand span{color:var(--sky)}
+    .nav-links{display:flex;gap:16px}
+    .nav-links a{text-decoration:none;color:#000;font-weight:600;padding:8px 10px;border-radius:8px}
+    .cta-link{background:#000;color:#fff}
+    .menu-btn{display:none;border:none;background:transparent;font-size:1.6rem}
+    @media (max-width:900px){
+      .menu-btn{display:block}
+      .nav-links{position:absolute;right:16px;top:64px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px;display:none;flex-direction:column}
+      .nav-links.show{display:flex}
+    }
+
+    .card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:22px;box-shadow:var(--shadow);margin-top:16px}
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Re<span>brar</span>.in</a>
+    <button id="menuBtn" class="menu-btn">☰</button>
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="apps.html">Best Apps</a>
+      <a href="guides.html">Guides</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1>Privacy Policy</h1>
+    <p>At Rebrar.in, your privacy is important to us. This policy explains what data we collect and how we use it.</p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>Basic usage data (pages visited, device type).</li>
+      <li>We do not collect sensitive personal information.</li>
+    </ul>
+
+    <h2>Cookies</h2>
+    <p>We may use cookies for analytics and improving user experience. You can disable cookies in your browser settings.</p>
+
+    <h2>Third-Party Links</h2>
+    <p>Our site contains links to third-party platforms (Groww, Angel One, CoinDCX, Delta Exchange). We are not responsible for their privacy practices.</p>
+
+    <h2>Data Security</h2>
+    <p>We take reasonable steps to protect your information.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy concerns, email us at <a href="mailto:contact.abrarrtllks@gmail.com">contact.abrarrtllks@gmail.com</a>.</p>
+
+    <p><em>Last updated: 2026</em></p>
+  </section>
+</main>
+
+<script>
+  const menuBtn=document.getElementById("menuBtn"),navLinks=document.getElementById("navLinks");
+  if(menuBtn&&navLinks){menuBtn.onclick=e=>{e.stopPropagation();navLinks.classList.toggle("show")};
+  document.onclick=e=>{if(!navLinks.contains(e.target)&&!menuBtn.contains(e.target))navLinks.classList.remove("show")}}
+</script>
+
+</body>
+</html>
